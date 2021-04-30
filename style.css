@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
 
 
+:root {
+	--color-grey: #F5F5F7;
+	--color-black: #000;
+}
+
 * {
   margin: 0;
   padding: 0; }
@@ -20,6 +25,20 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Baloo Bhai 2', sans-serif;
+	color:var(--color-black)
+}
+
+h1 {
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+	-webkit-text-stroke-width: thin;
 }
 
 
@@ -39,7 +58,7 @@ body {
 }
 
 .navigation {
-	background-color: black;
+	background-color: var(--color-black);
 	display: flex;
 	flex-direction: column;
 	margin: 3rem 0;
@@ -79,6 +98,138 @@ body {
 .log-out {
 	display: flex;
 	justify-content: center;
+}
+
+main{
+	flex: 0 0 90%;
+	display: flex;
+}
+
+.middle {
+	flex: 0 0 62.5%;
+	display: flex;
+	justify-content: center;
+}
+
+.items {
+	flex: 0 0 90%;
+}
+
+header {
+	position: relative;
+	margin-top: 5.5rem;
+	background-color: var(--color-grey);
+
+	/* Na potrzebny proby */
+	padding-left: 3.1rem;
+	padding-top: 6rem;
+	border-radius: 30px;
+}
+
+header p {
+	font-size: 1.6rem;
+	line-height: 0.24;
+	padding-bottom: 4rem;
+}
+
+header img {
+	position: absolute;
+    right: 20%;
+    top: -18%;
+}
+
+.my-courses {
+	margin-top: 2.4rem;
+	display: flex;
+}
+
+.course {
+	background-color: var(--color-grey);
+	display: flex;
+	align-items: center;
+	flex: 0 0 78%;
+	border-radius: 15px;
+	justify-content: space-between;
+}
+
+.image {
+	display: flex;
+	margin: 0.8rem 0.85rem;
+}
+
+.image img{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 1.6rem;
+}
+
+.title {
+	/* margin-left: 1.5rem; */
+}
+
+.procents {
+	position: relative;
+	content: "";
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 3px solid var(--color-black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 2px 0px var(--color-black);
+}
+
+.procents::before {
+	position: absolute;
+	content: "";
+	width: 1.6rem;
+	height: 1.6rem;
+	background-color: var(--color-grey);
+	top:-10%;
+	right: 0;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0px var(--color-grey);
+}
+
+.button	{
+	background-color: var(--color-black);
+	min-width: 12rem;
+	min-height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-right: 2.4rem;
+}
+
+.arrows {
+	flex: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.arrow {
+	padding: 0.5rem;
+	border-radius: 50%;
+	border: 2px solid var(--color-black);
+}
+
+.arrows span {
+	font-size: 2rem;
+	line-height: 1;
+	font-weight: 400;
+}
+
+.arrows .left {
+	margin-right: 1rem;
 }
 
 
