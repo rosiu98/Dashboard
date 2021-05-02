@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
 :root {
 	--color-grey: #F5F5F7;
 	--color-black: #000;
@@ -371,6 +374,37 @@ header img {
 .number span {
 	margin-top: 0.5px;
 }
+
+.stats {
+	margin-top: 2.4rem;
+	display: flex;
+	gap: 2.4rem;
+}
+
+.stats-box {
+	flex: 1;
+	display: flex;
+	background-color: var(--color-grey);
+	/* padding: 0 3.5rem; */
+	border-radius: 10px;
+	align-items: center;
+    justify-content: center;
+}
+
+.stats-box span {
+	font-size: 6.4rem;
+	font-weight: bold;
+	line-height: 1;
+	margin: 1.8rem 0;
+}
+
+.stats-box p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	margin-left: 1.1rem;
+}
+
 
 
 
