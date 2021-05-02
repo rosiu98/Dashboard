@@ -41,6 +41,10 @@ h3 {
 	-webkit-text-stroke-width: thin;
 }
 
+.caption {
+	font-size: 1.3rem;
+}
+
 
 .container {
 	width: 100%;
@@ -141,6 +145,7 @@ header img {
 .my-courses {
 	margin-top: 2.4rem;
 	display: flex;
+	margin-bottom: 4rem;
 }
 
 .course {
@@ -163,9 +168,9 @@ header img {
 	padding: 1.6rem;
 }
 
-.title {
+/* .title {
 	/* margin-left: 1.5rem; */
-}
+
 
 .procents {
 	position: relative;
@@ -205,6 +210,7 @@ header img {
 	font-weight: bold;
 	font-size: 1.3rem;
 	margin-right: 2.4rem;
+	cursor: pointer;
 }
 
 .arrows {
@@ -231,6 +237,51 @@ header img {
 .arrows .left {
 	margin-right: 1rem;
 }
+
+.categories {
+	display: flex;
+	gap: 3rem;
+}
+
+.categories a {
+	text-decoration: none;
+	color: var(--color-black);
+	opacity: 0.3;
+}
+
+.categories a:first-child {
+	opacity: 1;
+}
+
+.all {
+	margin-top: 1rem;
+	flex-wrap: wrap;
+	gap: 1.6rem;
+	margin-bottom: 0;
+}
+
+.all .course {
+	flex: 0 0 100%;
+	/* justify-content: unset; */
+}
+
+.all .image img {
+	min-width: 64px;
+    max-height: 64px;
+}
+
+.time {
+	display: flex;
+	gap: 0.8rem;
+	align-items: center;
+}
+
+.rating {
+	display: flex;
+	gap: 0.8rem;
+	align-items: end;
+}
+
 
 
 
