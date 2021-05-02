@@ -21,6 +21,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
  }
 
 
@@ -28,7 +29,8 @@ body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Baloo Bhai 2', sans-serif;
-	color:var(--color-black)
+	color:var(--color-black);
+	overflow-x: hidden;
 }
 
 h1 {
@@ -404,6 +406,136 @@ header img {
 	line-height: 2.4rem;
 	margin-left: 1.1rem;
 }
+
+.chart {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+.chart h2 {
+	margin-bottom: 1.6rem;
+}
+
+.hours {
+	display: flex;
+	gap: 2.4rem;
+	margin-bottom: 1rem;
+}
+.hours a{
+	text-decoration: none;
+}
+
+.hours h3 {
+	color:var(--color-black);
+	opacity: 0.3;
+}
+
+.now {
+	opacity: 1 !important;
+}
+
+.premium {
+	background-color: var(--color-grey);
+	border-radius: 10px;
+	background-image: url(img/Frame.svg);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 1.5rem 2.3rem;
+	background-position-x: 90%;
+}
+
+
+.premium p {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	padding-bottom: 3.7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	html {
+		font-size: 50%;
+	}
+
+	header img {
+		width: 29%;
+	}
+
+	.container{
+		height: auto;
+	}
+
+	.menu {
+		height: auto;
+	}
+
+
+}
+
+
+@media only screen and (max-width: 800px) {
+	.menu {
+		display: unset;
+	}
+
+	.navigation {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.logo {
+		margin-bottom: 0;
+	}
+
+	.container {
+		display: unset;
+	}
+
+	.nav {
+		display: flex;
+		gap: 12rem;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 0;
+	}
+
+	.log-out {
+		align-items: center;
+	}
+
+	.nav a {
+		margin-bottom: 0;
+	}
+
+	header img{
+		width: 21%;
+	}
+
+	main {
+		flex-direction: column;
+	}
+
+	.user-menu {
+		display: none;
+	}
+
+	.right-form {
+		margin: 0 2rem;
+	}
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+	.navigation {
+		margin:0;
+		border-radius: 0 0 20px 20px;
+		box-shadow: none;
+	}
+
+
+}
+
 
 
 
